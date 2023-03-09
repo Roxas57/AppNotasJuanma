@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d1e0e0"
+    android:padding="10dp"
+    tools:context=".AboutMeActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="186dp"
+        android:layout_height="241dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginEnd="47dp"
+        app:srcCompat="@drawable/imagen"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="275dp"
+        android:layout_height="140dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="286dp"
+        android:layout_marginEnd="82dp"
+        android:text="Notea, es una aplicación desarrollada en Android dedicada al almacenamiento de notas."
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="306dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="219dp"
+        android:layout_height="118dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="96dp"
+        android:layout_marginEnd="105dp"
+        android:layout_marginBottom="153dp"
+        android:text="Aplicación desarrollada por Juan María Castillo Giménez"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="92dp"
+        tools:layout_editor_absoluteY="461dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addBoton"
+        android:layout_width="215dp"
+        android:layout_height="95dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="218dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="@color/white"
+        android:text="Crear Nota"
+        android:textColor="#162EC5"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="625dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/notesBoton"
+        android:layout_width="176dp"
+        android:layout_height="92dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="254dp"
+        android:layout_marginBottom="13dp"
+        android:backgroundTint="@color/white"
+        android:text="Notas"
+        android:textColor="#162EC5"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="625dp" />
+</RelativeLayout>

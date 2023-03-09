@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#d1e0e0"
+    android:padding="20dp"
+    tools:context=".AddNoteActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="540dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/rounded_corner"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/titleinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#3000B0FF"
+            android:hint="Titulo:"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/descriptioninput"
+            android:layout_width="match_parent"
+            android:layout_height="66dp"
+            android:layout_margin="10dp"
+            android:background="#3000B0FF"
+            android:gravity="top"
+            android:hint="Descripción:"
+            android:lines="10"
+            android:padding="10dp" />
+
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="311dp"
+            android:measureAllChildren="false"
+            android:minDate="1/1/2023" />
+
+        <Spinner
+            android:id="@+id/statusView"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/savebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/white"
+        android:text="GUARDAR"
+        android:textColor="#162EC5" />
+
+
+</LinearLayout>
